@@ -24,6 +24,7 @@ class Solution {
             for(int i=0;i<nums.length;i++){
             arr[i]=nums[i]==0?product:0;
             }
+
         } else if (count==0) {
             for (int i=0;i<nums.length;i++){
                 arr[i]=product/nums[i];
