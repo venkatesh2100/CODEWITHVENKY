@@ -3,6 +3,9 @@ package SORTING;
 import java.util.Scanner;
 
 public class selectionsort {
+    //Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the
+    // smallest (or largest) element from the unsorted portion of the list and moving it to the sorted
+    // portion of the list.
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the Size of the Array");
@@ -12,10 +15,11 @@ public class selectionsort {
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
-        sort(arr);
+        selectionsort obj1=new selectionsort();
+        obj1.sort(arr);
 
     }
-    public  static void sort(int[] arr){
+    public  void sort(int[] arr){
         for(int i=0;i<arr.length;i++){
             int min=i;
             for(int j=i+1;j< arr.length;j++){
