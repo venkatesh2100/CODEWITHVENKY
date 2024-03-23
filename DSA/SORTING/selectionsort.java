@@ -24,14 +24,14 @@ public class selectionsort {
             int min=i;
             for(int j=i+1;j< arr.length;j++){
                 if(arr[min]>arr[j]){
-                   min =j;
-                           int temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
+                     min =j;
                 }
             }
 
             //Now Swap-time
+            int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
 
         }
         for(int num:arr){

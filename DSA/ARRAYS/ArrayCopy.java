@@ -9,6 +9,7 @@ public class ArrayCopy {
         l.add(100000);
         l.add(100);
         l.add(1000);
+        l.add(10000000);
         l.trimToSize();
         for(int i=0;i<l.size()-1;i++){
             int min= i;

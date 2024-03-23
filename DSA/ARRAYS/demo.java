@@ -12,6 +12,7 @@ public class demo{
         for(int num:arr){
             System.out.print(num+" ");
         }
+        
     }
 }
 

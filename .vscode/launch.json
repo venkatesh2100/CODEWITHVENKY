@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "selectionsort",
+      "request": "launch",
+      "mainClass": "SORTING.selectionsort",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
+      "name": "demo1",
+      "request": "launch",
+      "mainClass": "ARRAYS.demo1",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
+      "name": "ArrayCopy",
+      "request": "launch",
+      "mainClass": "ARRAYS.ArrayCopy",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/Demo1/index.htm",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/Demo1/index.htm"
+    }
+  ]
+}
