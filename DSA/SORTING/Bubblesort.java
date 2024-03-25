@@ -36,6 +36,7 @@ public class Bubblesort {
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
+        sc.close();
         Bubblesort obj1=new Bubblesort();
         obj1.sort(arr,size);
     }

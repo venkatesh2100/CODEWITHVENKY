@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Insertionsort",
+      "request": "launch",
+      "mainClass": "SORTING.Insertionsort",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
+      "name": "Bubblesort2",
+      "request": "launch",
+      "mainClass": "SORTING.Bubblesort2",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
+      "name": "Bubblesort",
+      "request": "launch",
+      "mainClass": "SORTING.Bubblesort",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
       "name": "selectionsort",
       "request": "launch",
       "mainClass": "SORTING.selectionsort",
