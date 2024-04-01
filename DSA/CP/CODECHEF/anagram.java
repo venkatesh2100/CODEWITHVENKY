@@ -8,7 +8,6 @@ import java.util.HashMap;
 public class anagram {
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        HashMap<Character,>
 
         return  false;
     }

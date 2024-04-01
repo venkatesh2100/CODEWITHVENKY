@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KadanessALGO",
+      "request": "launch",
+      "mainClass": "ARRAYS.KadanessALGO",
+      "projectName": "VCODE_e908a86a"
+    },
+    {
+      "type": "java",
+      "name": "interfaces",
+      "request": "launch",
+      "mainClass": "OOPS.interfaces",
+      "projectName": "CODE WITH VENKY_a7bbc5cd"
+    },
+    {
+      "type": "java",
       "name": "Insertionsort",
       "request": "launch",
       "mainClass": "SORTING.Insertionsort",
