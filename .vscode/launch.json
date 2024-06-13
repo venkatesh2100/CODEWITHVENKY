@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "demo",
+      "request": "launch",
+      "mainClass": "LINKEDLIST.demo"
+    },
+    {
+      "type": "java",
       "name": "linearSearch",
       "request": "launch",
       "mainClass": "CP.CODENINJAS.linearSearch",
