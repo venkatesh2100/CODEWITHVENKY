@@ -8,7 +8,7 @@ public class 205. Isomorphic Strings {
     if(s1!=t1){
         return false;
     }
-    int[] a=Arrays.tostring(s1);
+    int[] a=Arrays.tostring(s2);
     for(int i=0;i<a.length;i++){
       
     }
