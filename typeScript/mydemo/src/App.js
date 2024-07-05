@@ -1,13 +1,13 @@
 import Header from "./components/header";
 import Body from "./components/body";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
 function App() {
   const [todos, setTodos] = useState([]);
   const [error, setError] = useState(null);
   const [effectCount,setEffectCount]=useState(0);
-
+  const [state ,setState]= useState("red");
   function sqaure(num){
     var ans=num*num;
     console.log(ans)
@@ -25,11 +25,27 @@ sqaure(9483);
       }).catch(function(error){
         console.error("Error",error);
         setError(error.message);
-      })}
+      })} 
   }, [effectCount]);
+  
+ const expensiveValue=useMemo(()=>{
+  
+  let result=0;
+  for(let i=0;i<10000000;i++){
+    result+=i;
+  }
+  return result+num;
+ },[num])
 
   return (
-    <div className="App">
+    <div className="App" >
+      <button onClick={()=>setState("blue")}>1</button>
+      <button onClick={()=>setState("orange")}>2</button>
+      <button>3</button>
+      <button>4</button>
+      <input type="box"></input>
+      <button>Counter</button>
+      <p>Hi this is color {state}</p>
       {error && <p style={{ color: 'red' }}>Error: {error}</p>}
       {todos.map((todo) => (
         <Todo key={todo.id} title={todo.title} desc={todo.description} />
