@@ -1,40 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-function App() {
+import { useContext, useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import { CounterContext } from './Context.jsx';
 
-const [count, setCount] = useState(0)
+function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <>
-    <Count count={count}/>
-    <Button setCount={setCount} count={count}/>
+      <CounterContext.Provider value={{ count, setCount }}>
+        <Count />
+      </CounterContext.Provider>
     </>
-  )
+  );
 }
 
-//?Create Two Components which render Two Button + & - and count
-//?Create a Counter component in the Count
-function Count({count}){
-  return(
+// Create Two Components which render Two Button + & - and count
+function Count() {
+  return (
     <>
-    <Counter count={count}/>
+      <Counter />
+      <Button />
     </>
-  )
-}
-function Counter({count}){
-  return(
-    <>
-    {count}</>
-  )
-}
-function Button({setCount ,count}){
-  return(
-    <>
-    <button onClick={()=>setCount(count+1)}>Increment</button>
-    <button onClick={()=>setCount(count-1)}>Decrement</button>
-    </>
-  )
+  );
 }
 
-export default App
+function Counter() {
+  const { count } = useContext(CounterContext);
+
+  return (
+    <>
+      <p>Value: {count}</p>
+    </>
+  );
+}
+
+function Button() {
+    const { count, setCount } = useContext(CounterContext);
+
+  return (
+    <>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </>
+  );
+}
+
+export default App;
