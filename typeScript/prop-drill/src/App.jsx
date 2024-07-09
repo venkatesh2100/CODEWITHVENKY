@@ -1,8 +1,8 @@
-import { useContext, useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import { CounterContext } from './Context.jsx';
+import { useContext, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { CounterContext } from "./Context.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +26,8 @@ function Count() {
   );
 }
 
+//
+
 function Counter() {
   const { count } = useContext(CounterContext);
 
@@ -37,7 +39,7 @@ function Counter() {
 }
 
 function Button() {
-    const { count, setCount } = useContext(CounterContext);
+  const { count, setCount } = useContext(CounterContext);
 
   return (
     <>

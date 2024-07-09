@@ -1,35 +1,27 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from "react";
 
 // Create a component that tracks and displays the number of times it has been rendered. Use useRef to create a variable that persists across renders without causing additional renders when it changes.
 
 export default function Assignment2() {
-    const [render, setRender] = useState(0);
-    const renderCount = useRef(0);
+  const [renderdemo, setRender] = useState(0);
+  const renderCount = useRef(0);
 
-    const handleReRender = () => {
-        // Update the render count using useRef
-        renderCount.current++;
-        setRender(Math.random());
-        // Update the state to force re-render
-        // setRender(render + 1);
-    };
+  const handleReRender = () => {
+    // Update the render count using useRef
+    renderCount.current++;
+    setRender(Math.random());
+    // Update the state to force re-render
+    // setRender(render + 1);
+  };
 
-    return (
-        <div>
-            <p>This component has rendered {render} times.</p>
-            <button onClick={handleReRender}>Force Re-render</button>
-        </div>
-    );
-};
-
-
-
-
-
-
-
-
-
+  return (
+    <div>
+      <p>This component has rendered {renderdemo} times.</p>
+      <button onClick={handleReRender}>Force Re-render</button>
+      <button></button>
+    </div>
+  );
+}
 
 //! Assingment One code
 // import React, { useEffect, useRef, useState } from 'react';
@@ -39,7 +31,6 @@ export default function Assignment2() {
 //   const inputRef = useRef(null);
 //   const [divs, setDivs] = useState([]);
 
-//   useEffect(() => {
 //     setTimeout(() => {
 //       if (inputRef.current) {
 //         inputRef.current.focus();
@@ -75,13 +66,6 @@ export default function Assignment2() {
 //   );
 // }
 
-
-
-
-
-
-
-
 ////! This code useses Divref to Override the DOM element
 // import { useCallback, useEffect, useRef, useState } from 'react'
 
@@ -108,19 +92,6 @@ export default function Assignment2() {
 // }
 
 // export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ////! useMemo Code
 // import { useEffect, useMemo, useState } from 'react'
@@ -171,18 +142,6 @@ export default function Assignment2() {
 
 // export default App
 
-
-
-
-
-
-
-
-
-
-
-
-
 //!useEffect code
 // import { useEffect, useState } from 'react'
 
@@ -191,12 +150,10 @@ export default function Assignment2() {
 //   const [bankData, setBankData] = useState({});
 //   console.log("Hi re-render")
 
-
 //   useEffect(() => {
 //     setTimeout(() => {
 //       setBankData({ income: 100 });
 //     }, 2000);
-
 
 //     setTimeout(() => {
 //       setExchangeData({
@@ -211,9 +168,6 @@ export default function Assignment2() {
 //   //   setBankData({income:100});
 //   //   // Assume it is { income: 100 }
 //   // });
-
-
-
 
 //   const incomeTa = (bankData.income + exchangeData.returns) * 0.3;
 
