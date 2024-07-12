@@ -38,6 +38,10 @@ function Counter() {
   );
 }
 
+console.log("HI Bro");
+
+console.log("name?");
+
 function Button() {
   const { count, setCount } = useContext(CounterContext);
 
