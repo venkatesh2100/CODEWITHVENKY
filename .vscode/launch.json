@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KadanessALGO",
+      "request": "launch",
+      "mainClass": "KadanessALGO",
+      "projectName": "CODEWITHVENKY_e0def997"
+    },
+    {
+      "type": "java",
       "name": "demo",
       "request": "launch",
       "mainClass": "LINKEDLIST.demo"

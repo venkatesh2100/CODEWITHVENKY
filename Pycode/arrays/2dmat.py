@@ -4,7 +4,7 @@ def cmatrix(n,m):
     row=list(map(int,input().split()))
     if len(row)!=m:
       raise ValueError("Error")
-    matrifkjolkfl;kf;kx.append(row)
+    # matrifkjddolkfl;kf;kx.append(row)
   return mat
 
 

@@ -7,4 +7,4 @@ rbga=rba
 print(id(rba)==id(rbga))
 print(rba[1])
 print(len(rbga))
-print(rba[:])
+print(rba[:]) 

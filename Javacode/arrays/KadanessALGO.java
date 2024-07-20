@@ -1,4 +1,4 @@
-package ARRAYS;
+// package ARRAYS;
 
 public class KadanessALGO {
     public static void main(String[] args) {
