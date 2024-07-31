@@ -19,7 +19,7 @@ function useTodos() {
     };
 
     fetchTodos();
-    const intervalId = setInterval(fetchTodos, 5000); // Fetch every 10 seconds
+    const intervalId = setInterval(fetchTodos, 544000); // Fetch every 10 seconds
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []);

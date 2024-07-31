@@ -5,6 +5,7 @@ import java.util.*;
 public class ArrayCopy {
     public static void main(String[] args) {
         ArrayList<Integer> l = new ArrayList<>();
+        l.add(1000);
         l.add(100000);
         l.add(100);
         l.add(1000);
