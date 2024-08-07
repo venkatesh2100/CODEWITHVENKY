@@ -10,8 +10,8 @@ function Greeting(name: string):object {
 // nfkdsnfkskdfskdfksdfds;
 
 //Good Boy 
-const val=Greeting("Vnek");
-console.log(val)
+const val=Greeting("Vebky")
+console.log(val
 function Sum(a:number ,b:number){
   console.log(a+b);
 }
