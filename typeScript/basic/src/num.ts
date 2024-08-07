@@ -7,6 +7,8 @@ function Greeting(name: string):object {
     name
   }
 }
+// nfkdsnfkskdfskdfksdfds;
+
 //Good Boy 
 const val=Greeting("Vnek");
 console.log(val)

@@ -1,7 +1,7 @@
 type NumberArr=number[];
 
-
-function maxElement(arr:NumberArr){
+ 
+functio maxElement(arr:NumberArr){
   var max:number=0
   for(let i=0;i<arr.length;i++){
     if(arr[i]>max){
