@@ -10,5 +10,14 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://prisma:code2100@localhost:5432/postgres"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  lastname  String?
+  email     String   @unique
+  password  String
+  fisrtname String
+  createAt  DateTime @default(now())
 }
