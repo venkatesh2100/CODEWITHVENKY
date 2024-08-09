@@ -15,6 +15,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "@prisma/client": "^5.18.0",
     "acorn": "^8.12.1",
     "acorn-walk": "^8.3.3",
     "arg": "^4.1.3",

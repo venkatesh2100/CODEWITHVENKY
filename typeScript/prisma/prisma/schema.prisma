@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://prisma:code2100@localhost:5432/postgres"
+  url      = "postgresql://postgres:code2100@localhost:5432/postgres"
 }
 
 model User {
@@ -20,4 +20,12 @@ model User {
   password  String
   fisrtname String
   createAt  DateTime @default(now())
+}
+
+model Todo {
+  id          Int     @id @default(autoincrement())
+  title       String
+  description String?
+  status      Boolean @default(false)
+  userId      Int
 }
