@@ -13,7 +13,8 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-
+console.log(request.headers);
+console.log(request.body);
 const html=`<!DOCTYPE html>
 		<body>
 		  <h1>Hello World</h1>
@@ -21,8 +22,7 @@ const html=`<!DOCTYPE html>
 		</body>`;
 
 const remote="https://github.com/venkatesh2100";
-const destination="https://github.com/venkatesh2100";
-
+// const destination="https://github.com/venkatesh2100";
 const statuscode=301;
 // return Response.redirect(destination,statuscode);
 // return new Response(html,{
@@ -30,8 +30,17 @@ const statuscode=301;
 //         "content-type": "text/html;charset=UTF-8",
 //       },
 // })
+if(request.method==="GET"){
+	return Response.json({
+		"message":"Hi ra KODI mukkala Mahesh"
+	})
+}else{
+	return Response.json({
+		"message":"You didn't got the GET Request KONA"
+	})
+}
 
-return await fetch(remote,request);
+// return await fetch(remote,request);
 
 		// return  Response.json({
 		// 	message:"Hello Bhai"
