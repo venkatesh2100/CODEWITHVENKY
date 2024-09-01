@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 
-const app = new Hono();
+const page = new Hono();
 
 async function  authMiddleware(c:any,next:any) {
   if(c.req.header("Auth")){
@@ -8,13 +8,12 @@ async function  authMiddleware(c:any,next:any) {
   }else{
     return c.text("You dont have Acesss")
   }
+page.get("/", (c) => {
+  return c.json({"code":"Hello KONA!"});
+});
 }
 
-
-
-
-
-app.post("/",authMiddleware, async (c) => {
+page.post("/",authMiddleware, async (c) => {
 
   const body=await c.req.json();
   console.log(c.req.header("Auth"))
@@ -23,7 +22,7 @@ app.post("/",authMiddleware, async (c) => {
   console.log(body);
   return c.text("Hello KONA!");
 });
-app.get("/", (c) => {
+page.get("/", (c) => {
   return c.json({"code":"Hello KONA!"});
 });
-export default app;
+export default page;

@@ -1,9 +1,9 @@
-// function removeElement(nums: number[], val: number): number {
+// function removeElement(: [], val: ):  {
 //   let j = 0;
 //   let i = 0;
-//   while (i < nums.length) {
-//     if (nums[i] !== val) {
-//       nums[j] = nums[i];
+//   while (i < .length) {
+//     if ([i] !== val) {
+//       [j] = [i];
 //       j++;
 //     }
 //     i++;
@@ -12,11 +12,11 @@
 // }
 
 
-function removeElement(nums:number[],val:number):number{
+function removeElement(:[],val:):{
   let k=0;
-  for(let i of nums){
+  for(let i of ){
     if(val!==i){
-      nums[k++];
+      [k++];
     }
   }
 
