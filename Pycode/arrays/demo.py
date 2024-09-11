@@ -6,8 +6,9 @@ print(len(cars))
 
 for _ in cars:
   print(_)
-
 cars.append("lenovo")
+
+cars.push("car")
 
 
 print(cars)
