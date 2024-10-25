@@ -9,7 +9,6 @@ for (let c of s) {
     hashMap.set(c, 1);
   }
 }
-}
 
 
 console.log(isAnagram(hashMap,t))
