@@ -36,3 +36,6 @@ link=(array2LinkedList([10,30,12,32,3,40]))
 printLinkedList(link)
 print("End")
 print(link,30)
+
+
+array2LinkedList([])

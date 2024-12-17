@@ -10,7 +10,7 @@ def insertionSort(arr):
         # greater than key, to one position ahead
         # of their current position
         while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
+            arr[j + 1] = arr[j] 
             j -= 1
         arr[j + 1] = key
         print(arr)
