@@ -22,6 +22,7 @@ def process_input(input1):
                     res += str(curr_count)
                     curr_count = 0
 
+
     # Add any remaining `curr_count` to `res` if it's non-zero
     if curr_count != 0:
         res += str(curr_count)
