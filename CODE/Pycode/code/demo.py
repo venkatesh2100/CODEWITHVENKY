@@ -1,0 +1,10 @@
+print(200000*2)
+list=[1,2,3,4,5,6,7,8,9]
+list.append(3993)
+print(list)
+rba=['red','green','yellow']
+rbga=rba
+print(id(rba)==id(rbga))
+print(rba[1])
+print(len(rbga))
+print(rba[:]) 

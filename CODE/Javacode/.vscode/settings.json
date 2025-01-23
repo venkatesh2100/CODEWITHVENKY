@@ -1,0 +1,12 @@
+{
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.project.sourcePaths": [
+    "searching",
+    "recursion",
+    "linkedList",
+    "code",
+    "arrays",
+    "Threads",
+    "hashing"
+  ]
+}
