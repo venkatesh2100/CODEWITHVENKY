@@ -65,4 +65,14 @@ def Palindrome(l,r,s):
         return False
     return Palindrome(l+1,r-1,s)
 print(f'Recursion Palindrome',Palindrome(0,5,'abccba'))
-
+#TODO: Recursion DP Fibbnoci
+def DPfibba(n, DP):
+    if n in DP:
+        return DP[n]
+    if n == 1:
+        return 1 
+    if n == 0:
+        return 0 
+    DP[n]=DPfibba(n-1,DP) + DPfibba(n-2,DP)
+    return DP[n]
+print(f'Fibbnoci number',DPfibba(10,DP={}))
