@@ -1,4 +1,4 @@
-### print 1 to n 
+#XXX : print 1 to n 
 #TODO: Induction Hypothesis
 def func1ton(n):
     if n==1:

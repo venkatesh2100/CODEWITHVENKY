@@ -18,7 +18,7 @@ class Solution:
         count = 0
         # print(que)
         # print(store)
-
+        print(col)
         while que:
             r, c = que.popleft()
             connect = False
