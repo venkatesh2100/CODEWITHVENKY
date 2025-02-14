@@ -1,7 +1,7 @@
 
 # Backtracking 
 
-Backtracking is a general algorithmic technique that involves searching for a solution incrementally, abandoning a path as soon as it is determined that it cannot yield a valid solution. It is commonly used in problems involving permutations, combinations, and constraint satisfaction.
+Backtracking is a general algorithmic technique that involves searching for a solution incrementally, abandoning a path as soon as it is determined that it cannot yield a valid solution. I  is commonly used in problems involving permutations, combinations, and constraint satisfaction.
 
 ---
 
