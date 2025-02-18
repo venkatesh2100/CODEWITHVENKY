@@ -16,8 +16,8 @@ class Solution:
                 for c  in copy:
                     ans.append(''.join(c))
                 res.append(ans)
-                return 
-            
+                return
+
 
             for col in range(n):
                 if col in colset  or (row+col) in dia1set or (row-col) in dia2set:
