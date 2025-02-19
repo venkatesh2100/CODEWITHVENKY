@@ -1,5 +1,5 @@
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> list[list[str]]:
 
         #TODO: Define chessboard , Row col diagonal Set()
         chessboard = [['.'] * n for _ in range(n)]
