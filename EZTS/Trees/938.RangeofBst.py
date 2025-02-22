@@ -8,7 +8,7 @@ class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         # TODO: BFS the Entire Tree and then Find the val in the Range and Add it
         sumi: int = 0
-        self.bfs(root, low, high, sumi)
+        self.bfs(ro`ot, low, high`, sumi)
 
     def bfs(self, root, low, high, sumi):
         if not root:
