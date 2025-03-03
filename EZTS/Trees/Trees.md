@@ -235,7 +235,7 @@ def level_order(root):
         print(node.value, end=' ')
         if node.left:
             queue.append(node.left)
-        if node.right:
+z        if node.right:
             queue.append(node.right)
 ```
 
@@ -339,4 +339,3 @@ class Trie:
 ---
 
 Happy Coding! 🚀
-
