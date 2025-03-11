@@ -1,17 +1,17 @@
-from typing import List
+from list Import List
 class Solution:
-    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        res = [-1] * len(nums)
         stack = []
-        res = []
-        hashmap = {nums2[len(nums2)-1]:-1}
-        for num in nums2:
-            while stack and stack[-1] < num:
-                hashmap[stack.pop()] = num
-            stack.append(num)
-            
-            # stack.append(num)
-        # print(hashmap)
-        for num in nums1:
-            res.append(hashmap.get(num,-1))
+        idx = 0
+        for i ,val in enumerate(nums):
+            while stack and nums[stack[-1]] < val:
+                res[stack.pop()] = val
+            stack.append(i)
+        for i ,val in enumerate(nums):
+            while stack and nums[stack[-1]] < val:
+                res[stack.pop()] = val
+            stack.append(i)
         return res
+
+
