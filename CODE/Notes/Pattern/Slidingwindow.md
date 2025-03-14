@@ -1,5 +1,3 @@
-Here’s a well-structured **Sliding Window Interview Prep Notes** in Markdown format (`.md`) with **Python & Java** code, along with **emojis** for better readability. 🚀  
-
 ---
 
 ### **📌 Sliding Window - Interview Prep Notes**
@@ -147,4 +145,3 @@ class SlidingWindow {
 
 ---
 
-Would you like additional variations or explanations? 😊
