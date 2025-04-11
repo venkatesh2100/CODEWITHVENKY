@@ -4,6 +4,7 @@
 #include <iostream>
 #include <map>
 #include <set>
+#include <string>
 #include <vector>
 using namespace std;
 
@@ -55,6 +56,11 @@ int main() {
   // strings
   string s = "Venky";
   s += " Goodman";
+  //substring Method.
+  cout <<s.substr(0,5)<<endl;
+ int a = 100;
+  string num = to_string(a);
+  cout << typeid(a).name() <<  endl;
   cout << s << endl;
 
   // sorting
