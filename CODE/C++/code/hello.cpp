@@ -31,7 +31,7 @@ int main() {
 
   arr.push_back(50);
   arr.pop_back();
-
+  arr.push_back(10000);
   arr.push_back(1000);
 
   for (int i = 0; i < arr.size(); i++) {
