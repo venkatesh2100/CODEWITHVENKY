@@ -2,6 +2,11 @@
 # Time Complexity: O(n)
 # Space Complexity: O(n)
 
+### DFS search Technique
+### 1. Left - Root - Right INORDER TRAVERSAL
+### 2. ROOT - LEFT - RIGHT PREORDER TRAVERSAL
+### 3. LEFT - RIGHT - ROOT  POSTORDER TRAVERSAL 
+
 class TreeNode:
     def __init__(self, key):
         self.left = None
