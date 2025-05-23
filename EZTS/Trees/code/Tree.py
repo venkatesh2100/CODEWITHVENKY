@@ -1,19 +1,11 @@
-
+# Tree.py
 
 class TreeNode:
-  def __init__(self, value ,child=None):
-    self.value = value
-    self.child = child if child is not None else []
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
 
-  def addChild(self, child):
-    self.child.append(child)
-
-
-root = TreeNode(10000)
-root.addChild(100)
-root.addChild(1002)
-root.addChild(10020312)
-
-print(root.child)
-for child in root.child:
-  print(child)
+class BinaryTree:
+    def __init__(self, root=None):
+        self.root = root
