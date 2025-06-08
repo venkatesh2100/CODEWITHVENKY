@@ -8,5 +8,11 @@ class TreeNode:
         self.right = None
 
 class BinaryTree:
-    def __init__(self, root=None):
-        self.root = root
+    def Tree(root):
+        if not root:
+            return False 
+        
+        lh = Tree(root.left)
+        rh = Tree(root.right)
+        
+        return lh  + rh
