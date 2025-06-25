@@ -2,7 +2,6 @@
 class Solution:
     def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
         adjList = {i: [] for i in range(numCourses)}
-        # print(adjList)
         for edge in prerequisites:
             adjList[edge[0]].append(edge[1])
         # print(adjList)
@@ -21,5 +20,4 @@ class Solution:
             if not visited[adj]:
                 if self.isPre(adjList, visited, adj, target):
                     return True
-        # print("Case 1")
         return False
