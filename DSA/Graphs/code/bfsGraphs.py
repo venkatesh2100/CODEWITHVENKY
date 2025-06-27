@@ -6,9 +6,8 @@ from collections import deque
 def bfs(graph, start):
     if not graph:
         return None
-
     visited = set()
-
+    # Que stores the relative elements in the que.
     que = deque([start])
     res = []
     while que:
@@ -29,7 +28,8 @@ graph = {
     'C': ['F'],
     'D': [],
     'E': ['F'],
-    'F': []
+    'F': ['A']
 }
 
 print(bfs(graph, 'A'))
+print(bfs(graph, 'B'))
