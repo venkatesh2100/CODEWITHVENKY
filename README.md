@@ -2,4 +2,4 @@
 
 
 
-This repository covers basic topics related to data structures and algorithms (DSA) and Programming Languages.
+This repository covers basic topics related to data structures and algorithms (DSA) and Programming Languages
