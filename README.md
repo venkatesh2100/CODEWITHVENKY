@@ -6,7 +6,7 @@ This repository covers basic topics related to data structures and algorithms (D
 
 - understanding DSA and their concepts again! Let's Go
 #### Time Complexity.
-![[Pasted image 20250714103906.png]]
+![[https://jaro-website.s3.ap-south-1.amazonaws.com/2024/06/0_ouBkTMgA_yg_Etfz.png]]
 
 
 ### Problem Solving.
