@@ -3,6 +3,14 @@ import time
 # 1. Normal Recursive Fibonacci (Exponential Time)
 
 
+def fib_normal(num):
+    if num <= 1:
+        return num
+    return fib_normal(num - 1) + fib_normal(num - 2)
+
+# using Fibanaci normal recur   sive for 35
+
+
 def fib_recursive(num):
     if num <= 1:
         return num
