@@ -76,6 +76,6 @@ function factorial(x, memo) {
   }
 }
 
-console.time('factorial')
-console.log(factorial(1000n, memo))
-console.timeEnd('factorial')
+// console.time('factorial')
+// console.log(factorial(1000n, memo))
+// console.timeEnd('factorial')
